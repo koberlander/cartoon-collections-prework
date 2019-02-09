@@ -13,7 +13,8 @@ end
 
 def find_the_cheese(cheddar_cheese)
   cheddar_cheese.find do |x| 
-     x == "cheddar" || if x == "gouda" || if x == "camembert"}
+     cheddar_cheese.include?(x == "cheddar" || if x == "gouda" || if x == "camembert")
+   end
 end
 
   #cheese_types = ["cheddar", "gouda", "camembert"]
