@@ -12,7 +12,7 @@ def long_planeteer_calls(long_planeteer_calls)
 end
 
 def find_the_cheese(cheddar_cheese)
-  if cheddar_cheese.find("cheddar" || "gouda" || "camembert")  puts "yay"
+  if cheddar_cheese.find { |x| if x == "cheddar" || "gouda" || "camembert")  puts "yay"
   else 
     return nil
   }
